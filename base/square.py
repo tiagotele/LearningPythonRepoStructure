@@ -7,4 +7,6 @@ class Square(Shape):
 		self.side = side	
 	
 	def area(self):
+		if self.side <= 0:
+			raise ValueError("That is not a positive number!")
 		return self.side*self.side
