@@ -1,5 +1,6 @@
 from base.square import Square
 from base.rectangle import Rectangle
+from base.circle import Circle
 
 def main():
 	print ("On main method")
@@ -12,3 +13,6 @@ print ("Square area is ", s.area())
 
 r = Rectangle(3,4)
 print ("Rectangle area is", r.area())
+
+c = Circle(4)
+print ("Circle area is ", c.area())
