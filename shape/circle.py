@@ -10,5 +10,5 @@ class Circle(Shape):
 	def area(self):
 		if self.radius <= 0.0:
 			raise ValueError("That is not a positive number!")
-		return math.pi*(self.radius**2)
+		return round(math.pi*(self.radius**2), 2)
 

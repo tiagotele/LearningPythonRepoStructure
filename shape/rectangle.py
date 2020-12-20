@@ -11,4 +11,4 @@ class Rectangle(Shape):
 	def area(self):
 		if self.width <= 0.0 or self.length <= 0.0:
 			raise ValueError("That is not a positive number!")
-		return self.width * self.length
+		return round(self.width * self.length, 2)
