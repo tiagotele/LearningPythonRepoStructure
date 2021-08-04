@@ -1,4 +1,4 @@
-from .square import Square
+from shape.square import Square
 import unittest
 
 class TestSquare(unittest.TestCase):

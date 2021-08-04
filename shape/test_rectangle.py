@@ -1,4 +1,4 @@
-from .rectangle import Rectangle
+from shape.rectangle import Rectangle
 import unittest
 
 class TestRectangle(unittest.TestCase):
