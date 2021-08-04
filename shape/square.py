@@ -1,4 +1,6 @@
-from .shape import Shape
+
+from shape.shape import Shape
+
 
 class Square(Shape):
 	side = 0

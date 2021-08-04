@@ -1,4 +1,4 @@
-from .circle import Circle
+from shape.circle import Circle
 import math
 import unittest
 
