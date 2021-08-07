@@ -6,5 +6,9 @@ For run unittests use
 ```
 python -m unittest
 ```
+If you wish see examples in practice run:
+```
+python run
+```
 
 It's under progress.
