@@ -1,6 +1,6 @@
 import requests
 
-class Employee():
+class ClassWithRequest():
 	
 	def get_from_url(self, id):
 		url=f'http://company.com/{id}'
