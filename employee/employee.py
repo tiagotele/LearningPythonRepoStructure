@@ -6,7 +6,6 @@ class Employee():
 		url=f'http://company.com/{id}'
 		x=requests.get(url)
 		if x.ok:
-			# return x.text
 			return 'Success'
 		else:
 			return 'Bad Response'
