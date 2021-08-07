@@ -11,4 +11,4 @@ class Square(Shape):
 	def area(self):
 		if self.side <= 0:
 			raise ValueError("That is not a positive number!")
-		return self.side*self.side
+		return round(self.side*self.side, 2)
