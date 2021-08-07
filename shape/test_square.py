@@ -1,14 +1,21 @@
 from shape.square import Square
+from random import randrange
 import unittest
 
 class TestSquare(unittest.TestCase):
 
-	def test_square_area(self):
-		expected_area = 9
-		side = 3
+	def test_single_square_area(self):
+		side = 3.0
+		expected_area = 9.0
 		s = Square(side)
 		self.assertEqual(s.area(), expected_area)
 
+	def test_random_side_area(self):
+		side = randrange(100)
+		expected_area = side*side
+		s = Square(side)
+		self.assertEqual(s.area(), expected_area)
+	
 
 	@unittest.expectedFailure
 	def test_negative_side(self):
