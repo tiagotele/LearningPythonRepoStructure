@@ -1,0 +1,14 @@
+{
+    "name": "Tiago",
+    "company": "Stone Co",
+    "partners": [
+        {
+            "name": "Fulano",
+            "company": "Pagarme"
+        },
+        {
+            "name": "Beltrano",
+            "company": "Linx"
+        }
+    ]
+}
