@@ -16,3 +16,6 @@ class MyS3Client:
             Prefix=prefix,
         )
         return [object["Key"] for object in response["Contents"]]
+    
+    def download_file(self, bucket_name, bucket_key, destiny_file_name):
+        self.client.download_file(bucket_name, bucket_key, destiny_file_name)

@@ -1,3 +1,4 @@
+import os
 import pytest
 from tempfile import NamedTemporaryFile
 
@@ -29,3 +30,16 @@ def test_list_objects(s3_client, s3_test, bucket_name):
     my_client = MyS3Client()
     objects = my_client.list_objects(bucket_name=bucket_name, prefix="file1")
     assert objects == ["file12"]
+
+def test_dl(s3_client, s3_test, bucket_name):
+    file_text = "test"
+    with NamedTemporaryFile(delete=True, suffix=".txt") as tmp:
+        with open(tmp.name, "w", encoding="UTF-8") as f:
+            f.write(file_text)
+        s3_client.upload_file(tmp.name, bucket_name, "test")
+    
+    my_client = MyS3Client()
+    my_client.download_file(bucket_name, "test", "downloaded_file.txt")
+
+    assert os.path.isfile('downloaded_file.txt')
+
