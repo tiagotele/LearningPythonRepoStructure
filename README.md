@@ -18,4 +18,3 @@ If you wish see examples in practice run:
 ```
 python run
 ```
-
