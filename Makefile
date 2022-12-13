@@ -1,5 +1,5 @@
 unit_test:
-	python -m pytest
+	python3 -m pytest -v -x
 
 run_example:
 	python run.py
