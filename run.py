@@ -1,6 +1,6 @@
-from shape.square import Square
-from shape.rectangle import Rectangle
-from shape.circle import Circle
+from src.shape.square import Square
+from src.shape.rectangle import Rectangle
+from src.shape.circle import Circle
 
 def main():
 	print ("On main method")

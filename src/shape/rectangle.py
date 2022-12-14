@@ -1,4 +1,4 @@
-from .shape import Shape
+from src.shape.shape import Shape
 
 class Rectangle(Shape):
 	width = 0.0

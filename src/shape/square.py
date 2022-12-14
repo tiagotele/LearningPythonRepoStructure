@@ -1,5 +1,5 @@
 
-from shape.shape import Shape
+from src.shape.shape import Shape
 
 
 class Square(Shape):
