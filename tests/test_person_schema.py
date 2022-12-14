@@ -1,11 +1,11 @@
 import json
-from person_schema import Person
+from src.json_parsing.person_schema import Person
 import pytest
 
 
 @pytest.fixture
 def create_simple_person():
-    file_path = 'json_parsing/sample_person.json'
+    file_path = 'src/json_parsing/sample_data/sample_person.json'
     person = Person(file_path)
     return person
 
