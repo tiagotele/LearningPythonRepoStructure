@@ -3,3 +3,9 @@ unit_test:
 
 run_example:
 	python run.py
+
+code_format:
+	black .
+
+code_lint:
+	python3 lint.py -p ../src/
