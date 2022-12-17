@@ -5,7 +5,7 @@ import pytest
 
 @pytest.fixture
 def create_simple_person():
-    file_path = 'src/json_parsing/sample_data/sample_person.json'
+    file_path = "src/json_parsing/sample_data/sample_person.json"
     person = Person(file_path)
     return person
 

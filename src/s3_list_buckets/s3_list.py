@@ -1,5 +1,6 @@
 import boto3
 
+
 class MyS3Client:
     def __init__(self, region_name="us-east-1"):
         self.client = boto3.client("s3", region_name=region_name)
@@ -16,6 +17,6 @@ class MyS3Client:
             Prefix=prefix,
         )
         return [object["Key"] for object in response["Contents"]]
-    
+
     def download_file(self, bucket_name, bucket_key, destiny_file_name):
         self.client.download_file(bucket_name, bucket_key, destiny_file_name)

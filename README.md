@@ -6,8 +6,7 @@ This is a repo for keep as reference on how to strcure a Python codebase. Here i
 ```bash
 source testinv_env/bin/activate
 python3 -m venv testing_env
-pip install boto3
-pip install moto
+pip install -r requirements
 ```
 
 ## For run with pytest use:
