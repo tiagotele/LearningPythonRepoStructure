@@ -1,13 +1,13 @@
 import json
 
 
-class Partner():
+class Partner:
     def __init__(self, name, company):
         self.name = name
         self.company = company
 
 
-class Person():
+class Person:
     def __init__(self, file_path) -> None:
         if file_path is None:
             raise AttributeError("Required argument file_path")

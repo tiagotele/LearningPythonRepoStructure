@@ -137,3 +137,9 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# Virtual env for this repo
+testing_env
+
+# Vs code metadata
+.vscode
